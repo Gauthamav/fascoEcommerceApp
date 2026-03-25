@@ -1,5 +1,5 @@
 import React from 'react';
-import { productPageDetailSectionStarsImageData } from '../../utils/ProductPageSectionData';
+import { productPageDetailSectionStarsImageData } from '../../utils/productPageSectionData';
 import { EyeIcon } from '../../utils/svgIcons';
 
 const ProductDescription = ({ productName, productPrice }) => {

@@ -1,0 +1,110 @@
+@import 'tailwindcss';
+
+
+@theme {
+  --font-volkhov: 'Volkhov', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-digital: 'Digital-7 Mono', sans-serif;
+  --color-primary: #484848;
+  --color-heroBg: #e0e0e0;
+  --color-dealsBg: #f5f5f5;
+  --color-darkGray: #8a8a8a;
+  --text-52: 52px;
+  --text-16: 16px;
+  --text-20: 20px;
+  --text-91: 91px;
+  --text-187: 187px;
+  --spacing-20: 20px;
+  --spacing-100: 100px;
+  --spacing-320: 320px;
+  --spacing-70: 70px;
+  --spacing-700: 700px;
+  --spacing-392: 392px;
+  --shadow-custom: 0px 20px 35px rgba(0, 0, 0, 0.15);
+  --radius-10: 10px;
+
+
+
+
+}
+
+
+
+
+
+
+
+@layer utilities {
+  .wrapper {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  .wrapper-left {
+    width: 85%;
+    margin-left: auto;
+    max-width: 1440px;
+  }
+
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px #484848;
+  }
+
+  .heading {
+    font-weight: 500;
+    line-height: 1;
+  }
+  .sub-heading {
+    font-weight: 400;
+    line-height: 1;
+  }
+  .light-heading {
+    font-weight: 300;
+    line-height: 1;
+  }
+  .light-text {
+    font-weight: 300;
+  }
+
+  .text-tiny { font-size: 8px; }
+  .text-xxs { font-size: 10px; }
+  .text-1xl { font-size: 34px; }
+  .text-2xl { font-size: 40px; }
+  .text-46 { font-size: 46px; }
+  .text-3xl { font-size: 52px; }
+  .text-4xl { font-size: 64px; }
+  .text-5xl { font-size: 71px; }
+  .text-8xl { font-size: 150px; }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.marquee {
+  animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.separator {
+  width: 100%;
+  border-bottom: 1px solid #00000063;
+}

@@ -8,7 +8,7 @@ const ProductPageSideScroll = ({newObj}) => {
 
 
   return (
-    <div className='column gap-3 h-[450px] max-w-[90px] overflow-y-auto hide-scrollbar' >
+    <div className='column gap-2 h-[450px] max-w-[90px] overflow-y-auto hide-scrollbar' >
       
      {newArr.map((item ) => (
       <img className='w-[50px] object-cover' key={item.id} src={item.image} alt="" />
